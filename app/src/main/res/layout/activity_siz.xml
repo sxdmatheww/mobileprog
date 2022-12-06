@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3CB371"
+    android:orientation="vertical"
+    tools:context=".siz">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#00FF00"
+            android:textColor="#000000"
+            android:onClick="goBack"
+            android:text="Назад"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <TextView
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="
+1. При получении новой работы рабочие должны требовать от мастера дополнительный инструктаж по ТБ;
+2. На территории завода следует выполнять следующие правила:
+*не ходить без необходимости по другим цехам предприятия;
+*обходить места погрузки и выгрузки, не находиться под поднятым грузом;
+*не проходить в местах, не предназначенных для прохода;
+*не прикасаться к электрооборудованию (ЭО), к клеммам и электрическим проводам;
+*не включать и не останавливать (кроме аварийных случаев) машины, станки и механизмы, работа на которых не поручена руководством цеха;
+3. В случае получения травмы или даже просто недомогания прекратить работу, известить об этом мастера и обратиться в медпункт." />
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
